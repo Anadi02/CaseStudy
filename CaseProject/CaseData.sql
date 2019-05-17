@@ -19,6 +19,8 @@ starts_date date,
 end_time time,
 end_date date,
 comment varchar(64),
-statuss bit
+statuss bit,
+names varchar (15) primary key
 )
+drop table Workout_Active
 

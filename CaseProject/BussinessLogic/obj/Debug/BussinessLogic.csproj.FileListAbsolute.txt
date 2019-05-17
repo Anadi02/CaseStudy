@@ -1,0 +1,12 @@
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\bin\Debug\BussinessLogic.dll.config
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\bin\Debug\BussinessLogic.dll
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\bin\Debug\BussinessLogic.pdb
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\obj\Debug\BussinessLogic.csprojAssemblyReference.cache
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\obj\Debug\BussinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\obj\Debug\BussinessLogic.csproj.CopyComplete
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\obj\Debug\BussinessLogic.dll
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\BussinessLogic\obj\Debug\BussinessLogic.pdb
