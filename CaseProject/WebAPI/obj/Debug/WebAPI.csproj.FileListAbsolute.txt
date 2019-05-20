@@ -47,15 +47,12 @@ C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\roslyn\vbc.exe.co
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\roslyn\vbc.rsp
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\roslyn\VBCSCompiler.exe
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\BussinessLogic.dll
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\Newtonsoft.Json.dll
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\System.Net.Http.Formatting.dll
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\System.Web.Http.dll
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\System.Web.Http.WebHost.dll
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\EntityFramework.dll
-C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\BussinessLogic.pdb
-C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\BussinessLogic.dll.config
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\Newtonsoft.Json.xml
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\System.Net.Http.Formatting.xml
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\System.Web.Http.xml
@@ -67,3 +64,11 @@ C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\obj\Debug\WebAPI.cspr
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\obj\Debug\WebAPI.csproj.CopyComplete
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\obj\Debug\WebAPI.dll
 C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\obj\Debug\WebAPI.pdb
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\BussinessLogic1.dll
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\System.Web.Cors.dll
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\BussinessLogic1.pdb
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\BussinessLogic1.dll.config
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\amishra262\Desktop\CaseProject\CaseProject\WebAPI\bin\System.Web.Http.Cors.xml

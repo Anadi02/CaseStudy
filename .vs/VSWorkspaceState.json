@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CaseProject",
+    "\\CaseProject\\AngularCaseStudy",
+    "\\CaseProject\\AngularCaseStudy\\ClientApp",
+    "\\CaseProject\\AngularCaseStudy\\ClientApp\\src",
+    "\\CaseProject\\AngularCaseStudy\\ClientApp\\src\\app",
+    "\\CaseProject\\AngularCaseStudy\\Controllers",
+    "\\CaseProject\\WebAPI",
+    "\\CaseProject\\WebAPI\\Controllers"
   ],
+  "SelectedNode": "\\CaseProject\\WebAPI\\Controllers\\CategoryController.cs",
   "PreviewInSolutionExplorer": false
 }

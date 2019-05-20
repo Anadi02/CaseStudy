@@ -23,4 +23,5 @@ statuss bit,
 names varchar (15) primary key
 )
 drop table Workout_Active
-
+select * from Workout_Category
+insert into Workout_Category values ('Running')

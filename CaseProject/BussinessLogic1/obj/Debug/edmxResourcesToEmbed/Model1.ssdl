@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CasestudyDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Workout_Active">
+    <Key>
+      <PropertyRef Name="names" />
+    </Key>
+    <Property Name="Workout_id" Type="int" />
+    <Property Name="start_time" Type="time" Precision="7" />
+    <Property Name="starts_date" Type="date" />
+    <Property Name="end_time" Type="time" Precision="7" />
+    <Property Name="end_date" Type="date" />
+    <Property Name="comment" Type="varchar" MaxLength="64" />
+    <Property Name="statuss" Type="bit" />
+    <Property Name="names" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Workout_Category">
+    <Key>
+      <PropertyRef Name="category_id" />
+    </Key>
+    <Property Name="category_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="category_name" Type="varchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="Workout_Collection">
+    <Key>
+      <PropertyRef Name="workout_id" />
+    </Key>
+    <Property Name="Workout_title" Type="varchar" MaxLength="128" />
+    <Property Name="WorkoutNote" Type="varchar" MaxLength="256" />
+    <Property Name="Calories_Burn_Per_min" Type="float" />
+    <Property Name="category_id" Type="int" />
+    <Property Name="workout_id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Workout_A__Worko__173876EA">
+    <End Role="Workout_Collection" Type="Self.Workout_Collection" Multiplicity="0..1" />
+    <End Role="Workout_Active" Type="Self.Workout_Active" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workout_Collection">
+        <PropertyRef Name="workout_id" />
+      </Principal>
+      <Dependent Role="Workout_Active">
+        <PropertyRef Name="Workout_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Workout_C__categ__1273C1CD">
+    <End Role="Workout_Category" Type="Self.Workout_Category" Multiplicity="0..1" />
+    <End Role="Workout_Collection" Type="Self.Workout_Collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workout_Category">
+        <PropertyRef Name="category_id" />
+      </Principal>
+      <Dependent Role="Workout_Collection">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CasestudyDBModelStoreContainer">
+    <EntitySet Name="Workout_Active" EntityType="Self.Workout_Active" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Workout_Category" EntityType="Self.Workout_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Workout_Collection" EntityType="Self.Workout_Collection" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Workout_A__Worko__173876EA" Association="Self.FK__Workout_A__Worko__173876EA">
+      <End Role="Workout_Collection" EntitySet="Workout_Collection" />
+      <End Role="Workout_Active" EntitySet="Workout_Active" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Workout_C__categ__1273C1CD" Association="Self.FK__Workout_C__categ__1273C1CD">
+      <End Role="Workout_Category" EntitySet="Workout_Category" />
+      <End Role="Workout_Collection" EntitySet="Workout_Collection" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

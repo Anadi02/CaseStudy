@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -114,13 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BussinessLogic\BussinessLogic.csproj">
-      <Project>{30736ab4-f801-42a5-8a96-13bf57466dbc}</Project>
-      <Name>BussinessLogic</Name>
+    <ProjectReference Include="..\BussinessLogic1\BussinessLogic1.csproj">
+      <Project>{b39c44ed-b53a-4166-8f9a-1c67044c5d75}</Project>
+      <Name>BussinessLogic1</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
