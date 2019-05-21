@@ -1,15 +1,27 @@
-<table class="table">
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th></th>
-  </tr>
-  <tr *ngFor="let cat of categories">
-    <td>{{cat.category_id}}</td>
-    <td>{{cat.category_name}}</td>
-    <td>
-      <a [routerLink]="['/Categories/edit-category',cat.Id]">Edit</a> |
-      <a [routerLink]="['/Categories/delete-category',cat.Id]">Delete</a>
-    </td>
-  </tr>
-</table> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <add-category (CategoryAdded)="SaveCategory($event)"></add-category>
+    </div>
+    <div class="col-md-12">
+      <table class="table">
+
+        <tr>
+
+          <th>CATEGORY NAME</th>
+          <th></th>
+        </tr>
+        <tr *ngFor="let cat of Categories">
+
+          <edit-category [NameAdd]="cate"></edit-category>
+
+
+
+          <td></td>
+
+
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

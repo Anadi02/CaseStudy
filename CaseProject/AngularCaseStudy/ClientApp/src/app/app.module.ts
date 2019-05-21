@@ -11,11 +11,11 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { Category } from './Category';
-import { ListCategoryComponent } from './Categories/list-category/list-category.component';
+//import { listCategoryComponent } from './Categories/list-category/list-category.component';
 import { AddCategoryComponent } from './Categories/add-category/add-category.component';
 import { SearchCategoryComponent } from './Categories/search-category/search-category.component';
-import { DeleteComponent } from './Categories/delete-category/delete.component';
-//import { EditCategory } from './Categories/edit-category/edit.component';
+import { DeleteCategoryComponent } from './Categories/delete-category/delete.component';
+import { EditCategoryComponent } from './Categories/edit-category/edit-category.component';
 import { WorkoutService } from './workout.service';
 import { AddworkoutComponent } from './add-workout/add-workout.component';
 
@@ -27,10 +27,10 @@ import { AddworkoutComponent } from './add-workout/add-workout.component';
     CounterComponent,
     FetchDataComponent,
     AddCategoryComponent,
-   // EditCategory,
-    DeleteComponent,
-    ListCategoryComponent,
+    DeleteCategoryComponent,
+    EditCategoryComponent,
     SearchCategoryComponent,
+   // listCategoryComponent,
     AddworkoutComponent
   ],
   imports: [
@@ -40,16 +40,16 @@ import { AddworkoutComponent } from './add-workout/add-workout.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
-      { path: 'list-Category', component: ListCategoryComponent },
-      { path: 'delete-Category/:id', component: DeleteComponent },
+     // { path: 'list-Category', component: ListCategoryComponent },
+      { path: 'delete-Category/:id', component: DeleteCategoryComponent },
       { path: 'add-Category', component: AddCategoryComponent },
-     // { path: 'edit-Category/:id', component: EditCategory},
+      { path: 'edit-Category/:id', component: EditCategoryComponent},
       { path: 'search-Category', component: SearchCategoryComponent },
       { path: '', redirectTo: 'list-category', pathMatch: 'full' },
       { path: 'add-workout', component: AddworkoutComponent }
     ])
   ],
   providers: [WorkoutService],
-  bootstrap: [AddworkoutComponent]
+  bootstrap: [AddCategoryComponent]
 })
 export class AppModule { }

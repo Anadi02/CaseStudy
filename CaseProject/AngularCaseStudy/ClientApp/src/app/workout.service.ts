@@ -25,7 +25,7 @@ export class WorkoutService {
     return this.http.put(this._url, dept);
   }
 
-  delete(id: string) {
+  delete(id: number) {
     return this.http.delete(this._url + `/${id}`);
   }
 
