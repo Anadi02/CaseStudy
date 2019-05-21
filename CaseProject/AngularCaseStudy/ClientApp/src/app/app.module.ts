@@ -15,8 +15,9 @@ import { ListCategoryComponent } from './Categories/list-category/list-category.
 import { AddCategoryComponent } from './Categories/add-category/add-category.component';
 import { SearchCategoryComponent } from './Categories/search-category/search-category.component';
 import { DeleteComponent } from './Categories/delete-category/delete.component';
-import { EditComponent } from './Categories/edit-category/edit.component';
+//import { EditCategory } from './Categories/edit-category/edit.component';
 import { WorkoutService } from './workout.service';
+import { AddworkoutComponent } from './add-workout/add-workout.component';
 
 @NgModule({
   declarations: [
@@ -26,10 +27,11 @@ import { WorkoutService } from './workout.service';
     CounterComponent,
     FetchDataComponent,
     AddCategoryComponent,
-    EditComponent,
+   // EditCategory,
     DeleteComponent,
     ListCategoryComponent,
-    SearchCategoryComponent
+    SearchCategoryComponent,
+    AddworkoutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -41,12 +43,13 @@ import { WorkoutService } from './workout.service';
       { path: 'list-Category', component: ListCategoryComponent },
       { path: 'delete-Category/:id', component: DeleteComponent },
       { path: 'add-Category', component: AddCategoryComponent },
-      { path: 'edit-Category/:id', component: EditComponent },
+     // { path: 'edit-Category/:id', component: EditCategory},
       { path: 'search-Category', component: SearchCategoryComponent },
-      { path: '', redirectTo: 'list-category', pathMatch:'full' }
+      { path: '', redirectTo: 'list-category', pathMatch: 'full' },
+      { path: 'add-workout', component: AddworkoutComponent }
     ])
   ],
   providers: [WorkoutService],
-  bootstrap: [ListCategoryComponent]
+  bootstrap: [AddworkoutComponent]
 })
 export class AppModule { }

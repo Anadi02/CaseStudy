@@ -5,6 +5,7 @@ import { Category } from './Category';
 
 @Injectable()
 export class WorkoutService {
+    [x: string]: any;
   private _url = 'http://localhost:62586/api/Category';
   constructor(private http: HttpClient) { }
 
