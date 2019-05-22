@@ -1,10 +1,14 @@
-<dl>
+<form novalidate [formGroup]="frmCat" class="form-inline">
 
-  <dt>
-    Category Name
-  </dt>
-  <dd>{{Cat.category_name}}</dd>
-</dl>
-<div class="form-group">
-  <button type="button" (click)="delete()" class="btn btn danger">Delete</button>
-</div>
+  <div class="form-group col-md-12">
+    <input type="text" name="name" id="name" formControlName="name" class="form-control" [ngClass]="{'is-valid':f.name.valid,'is-invalid':f.name.invalid && f.name.dirty}">
+    <div *ngIf="f.name.invaild && f.name.dirty && f.name.errors?.required" class="invalid-feedback">
+      Category Name is required
+    </div>
+    {{Cat.category_name}}
+    <br>
+    <div class="form-group">
+      <button type="submit" class="btn btn-danger btn-lg">Delete</button>
+    </div>
+    </div>
+    </form>

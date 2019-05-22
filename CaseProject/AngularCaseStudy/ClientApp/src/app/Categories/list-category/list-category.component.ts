@@ -8,7 +8,7 @@ import { dashCaseToCamelCase } from '@angular/compiler/src/util';
   templateUrl: './list-category.component.html',
   styleUrls: ['./list-category.component.css']
 })
-export class ViewAllCategoryComponent implements OnInit {
+export class listcategorycomponent implements OnInit {
 
   Categories: Category[]
   constructor(private service: WorkoutService) { }

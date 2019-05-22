@@ -5,7 +5,7 @@
     <div *ngIf="f.name.invaild && f.name.dirty && f.name.errors?.required" class="invalid-feedback">
       Category Name is required
     </div>
-    <br />
+    
 
     <button type="submit" class="btn btn-success btn-lg" (click)="Enable()" [hidden]="click">Edit</button>
     <button type="submit" class="btn btn-primary btn-lg" (click)="Disabled()" [hidden]="click">Update</button>

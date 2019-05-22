@@ -1,27 +1,26 @@
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <add-category (CategoryAdded)="SaveCategory($event)"></add-category>
+      <app-add-category (CategoryAdded)="SaveCategory($event)"></app-add-category>
     </div>
     <div class="col-md-12">
       <table class="table">
 
         <tr>
 
-          <th>CATEGORY NAME</th>
+          <th>Category</th>
           <th></th>
         </tr>
         <tr *ngFor="let cat of Categories">
 
-          <edit-category [NameAdd]="cate"></edit-category>
-
-
+          <edit-category [NameAdd]="c"></edit-category>
 
           <td></td>
-
-
         </tr>
       </table>
     </div>
   </div>
 </div>
+
+

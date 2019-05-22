@@ -11,14 +11,14 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { Category } from './Category';
-//import { listCategoryComponent } from './Categories/list-category/list-category.component';
+import { listcategorycomponent } from './Categories/list-category/list-category.component';
 import { AddCategoryComponent } from './Categories/add-category/add-category.component';
 import { SearchCategoryComponent } from './Categories/search-category/search-category.component';
 import { DeleteCategoryComponent } from './Categories/delete-category/delete.component';
 import { EditCategoryComponent } from './Categories/edit-category/edit-category.component';
 import { WorkoutService } from './workout.service';
 import { AddworkoutComponent } from './add-workout/add-workout.component';
-
+//import { ViewAllCategoryComponent } from './Categories/list-category/list-category.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,7 @@ import { AddworkoutComponent } from './add-workout/add-workout.component';
     DeleteCategoryComponent,
     EditCategoryComponent,
     SearchCategoryComponent,
-   // listCategoryComponent,
+    listcategorycomponent,
     AddworkoutComponent
   ],
   imports: [
@@ -40,7 +40,7 @@ import { AddworkoutComponent } from './add-workout/add-workout.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
-     // { path: 'list-Category', component: ListCategoryComponent },
+      { path: 'list-Category', component: listcategorycomponent },
       { path: 'delete-Category/:id', component: DeleteCategoryComponent },
       { path: 'add-Category', component: AddCategoryComponent },
       { path: 'edit-Category/:id', component: EditCategoryComponent},
@@ -50,6 +50,6 @@ import { AddworkoutComponent } from './add-workout/add-workout.component';
     ])
   ],
   providers: [WorkoutService],
-  bootstrap: [AddCategoryComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
